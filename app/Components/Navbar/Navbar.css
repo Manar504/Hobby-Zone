@@ -1,0 +1,13 @@
+.image{
+  
+     display: flex; 
+    align-items: center;
+    justify-content: center; 
+    /* background-color: aqua; */
+    height: 100%;
+}
+.profile-avatar{
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}

@@ -1,0 +1,13 @@
+<svg id="progress_bar" data-name="progress bar" xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <g id="Ellipse_212" data-name="Ellipse 212" fill="none" stroke="#f8f6f9" stroke-linecap="round" stroke-width="3" stroke-dasharray="1 0">
+    <circle cx="20" cy="20" r="20" stroke="none"/>
+    <circle cx="20" cy="20" r="18.5" fill="none"/>
+  </g>
+  <g id="Ellipse_174" data-name="Ellipse 174" fill="none" stroke="#7340ae" stroke-linecap="round" stroke-width="3" stroke-dasharray="1 0">
+    <circle cx="20" cy="20" r="20" stroke="none"/>
+    <circle cx="20" cy="20" r="18.5" fill="none"/>
+  </g>
+  <g id="check" transform="translate(8 8)">
+    <path id="check-2" data-name="check" d="M20,6,9,17,4,12" fill="none" stroke="#491a85" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>
