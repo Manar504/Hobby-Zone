@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="32" viewBox="0 0 48 32">
+  <g id="Glyph" transform="translate(-3508 -7058)">
+    <rect id="Frame" width="48" height="32" transform="translate(3508 7058)" fill="none"/>
+    <g id="notifications" transform="translate(3520 7062)">
+      <g id="bell">
+        <path id="Path_5" data-name="Path 5" d="M18,8A6,6,0,0,0,6,8c0,7-3,9-3,9H21s-3-2-3-9" fill="none" stroke="#a59fad" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+        <path id="Path_6" data-name="Path 6" d="M13.73,21a2,2,0,0,1-3.46,0" fill="none" stroke="#a59fad" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+      </g>
+      <g id="Ellipse_204" data-name="Ellipse 204" transform="translate(12)" fill="#491a85" stroke="#fff" stroke-width="1">
+        <circle cx="4" cy="4" r="4" stroke="none"/>
+        <circle cx="4" cy="4" r="3.5" fill="none"/>
+      </g>
+    </g>
+  </g>
+</svg>

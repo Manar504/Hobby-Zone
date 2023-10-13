@@ -1,0 +1,6 @@
+<svg id="payment" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="dollar-sign">
+    <line id="Line_190" data-name="Line 190" y2="22" transform="translate(12 1)" fill="none" stroke="#111011" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <path id="Path_13500" data-name="Path 13500" d="M17,5H9.5a3.5,3.5,0,0,0,0,7h5a3.5,3.5,0,1,1,0,7H6" fill="none" stroke="#111011" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+  </g>
+</svg>

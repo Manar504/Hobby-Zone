@@ -1,0 +1,16 @@
+<svg id="community" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+  <g id="globe" transform="translate(0 0)">
+    <circle id="Ellipse_221" data-name="Ellipse 221" cx="10" cy="10" r="10" transform="translate(2 2)" fill="none" stroke="#a59fad" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"/>
+    <line id="Line_210" data-name="Line 210" x2="18" transform="translate(3 15)" fill="none" stroke="#a59fad" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <line id="Line_211" data-name="Line 211" x2="18" transform="translate(3 9)" fill="none" stroke="#a59fad" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <path id="Path_13526" data-name="Path 13526" d="M12,2a15.3,15.3,0,0,1,4,10,15.3,15.3,0,0,1-4,10A15.3,15.3,0,0,1,8,12,15.3,15.3,0,0,1,12,2Z" fill="none" stroke="#a59fad" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+    <g id="Ellipse_222" data-name="Ellipse 222" transform="translate(13.5 7)" fill="#fff" stroke="#a59fad" stroke-width="1">
+      <circle cx="2.5" cy="2.5" r="2.5" stroke="none"/>
+      <circle cx="2.5" cy="2.5" r="2" fill="none"/>
+    </g>
+    <g id="Ellipse_223" data-name="Ellipse 223" transform="translate(5.5 12)" fill="#fff" stroke="#a59fad" stroke-width="1">
+      <circle cx="3" cy="3" r="3" stroke="none"/>
+      <circle cx="3" cy="3" r="2.5" fill="none"/>
+    </g>
+  </g>
+</svg>
