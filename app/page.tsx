@@ -9,8 +9,6 @@ export default function Home() {
     <main> 
       <Hero/>
       <Section1/> 
-       
-        
     </main>
   )
 }
