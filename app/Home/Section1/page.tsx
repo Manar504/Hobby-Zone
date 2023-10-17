@@ -5,7 +5,7 @@ const Section1 = () => {
   return (
     
     <div className='container'> 
-    <div className='row ms-auto'>
+    <div className='row '>
         <div className="col text-center"> 
         <h1>Choose the learning category you need</h1> 
         <p>Cupcake danish tiramisu powder soda ginger cake 

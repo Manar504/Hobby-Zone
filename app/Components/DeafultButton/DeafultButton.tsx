@@ -6,7 +6,7 @@ import React, { FormEventHandler } from 'react'
 type ButtonProps= {
     handleClick : (event : React.MouseEvent<HTMLButtonElement>)=> void ;
     text : string ; 
-    width : string ;
+    width? : string ;
     bg? : string ;
 }
 
