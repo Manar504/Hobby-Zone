@@ -32,10 +32,10 @@ const Navbar = () => {
     <div className="collapse navbar-collapse" id="collapsibleNavId"> 
       <ul className="navbar-nav ms-auto mt-2 mt-lg-0">
         <li className="nav-item">
-          <a className="nav-link active" href="#" aria-current="page">Home <span className="visually-hidden">(current)</span></a>
+          <Link className="nav-link active" href="/" aria-current="page">Home <span className="visually-hidden">(current)</span></Link>
         </li>
         <li className="nav-item">
-          <a className="nav-link" href="#">Courses</a>
+          <Link className="nav-link" href="/courses">Courses</Link>
         </li>
         <li className="nav-item">
           <a className="nav-link" href="#">Prices</a>
