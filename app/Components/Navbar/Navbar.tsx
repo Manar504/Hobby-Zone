@@ -1,10 +1,8 @@
 import React from 'react'
 import "./Navbar.css"
-
 import Link from 'next/link'; 
+import origami from "../../../public/Assets/origami/origami.png"
 import Image from 'next/image';
-
-// import origami from "../../../Assets/origami.svg"
 
 
 const Navbar = () => {
@@ -13,7 +11,7 @@ const Navbar = () => {
 
        <nav className="navbar navbar-expand-sm navbar-dark">
      <div className="container">
-    {/* <Link className="navbar-brand" href="#"><Image src={"origami"} alt='hg' width={40} height={40}></Image></Link> */}
+    <Link className="navbar-brand" href="#"><Image src={origami} alt='hg' width={40} height={40}></Image></Link>
     <button className="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon" />
     </button>

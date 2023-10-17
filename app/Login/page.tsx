@@ -18,7 +18,7 @@ const Login = () => {
   }
   return (
     <div className='container '>
-      <div className='row flex-md-row flex-sm-column-reverse '> 
+      <div className='row '> 
       <div className='col-md-5 col-sm-12 p-5'> 
         <h3>Sign in</h3>
         <p className=' mb-5 '>Don't have an account ? <Link className='Login-button' href={"/Register"}> Sign Up </Link> </p>
@@ -52,7 +52,7 @@ const Login = () => {
           <Link href={"#"}> <Image src={apple} alt=''></Image> </Link>
         </div>
         </div>
-        <div className="col-md-6 d-flex flex-column justify-content-center align-items-center my-sm-4">
+        <div className="order-first order-md-last col-md-6 d-flex flex-column justify-content-center align-items-center my-sm-4">
           <h2>Welcome Back !</h2>
           <Image src={logo} width={150}  alt='a'/>
         </div>
