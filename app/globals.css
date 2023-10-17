@@ -8,6 +8,7 @@
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
+  --main-color : #491A85 ;
 
   --primary-glow: conic-gradient(
     from 180deg at 50% 50%,
@@ -86,8 +87,8 @@ body {
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background-image: linear-gradient(to right, #d7d2cc 0%, #304352 100%);
+  /* color: rgb(var(--foreground-rgb)); */
+
 }
 
 a {
@@ -97,6 +98,6 @@ a {
 
 @media (prefers-color-scheme: dark) {
   html {
-    color-scheme: dark;
+    /* color-scheme: dark; */
   }
 }

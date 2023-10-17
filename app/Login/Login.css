@@ -1,0 +1,15 @@
+.Login-button{
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.divider-social .underline{
+    background-color: var(--main-color);
+    height: 1px;
+    width: 50%;
+    /* background-color: red; */
+}
+
+
+
+

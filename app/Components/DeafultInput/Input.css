@@ -1,0 +1,66 @@
+.Wrapper{
+    width: 100%;
+    padding-bottom:30px;
+}
+
+.Wrapper .input-data{
+    height: 40px;
+    width: 100%;
+    position: relative;
+}
+
+.Wrapper .input-data input{
+    height: 100%;
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    border-bottom: 2px solid gray ;
+    color: black;
+    font-size: 17px;
+    outline: none;
+}
+
+
+.Wrapper .input-data label{
+   position: absolute;
+   bottom: 8px;
+   left: 0;
+   color: gray;
+   pointer-events: none;
+   transition: all 0.3s ease;
+}
+.input-data input:focus ~ label,
+.input-data input:valid ~ label{
+    transform: translateY(-30px);
+    font-size: 15px;
+    color: var(--main-color);
+}
+
+.Wrapper .input-data .underline{
+    position: absolute;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    /* background-color: red; */
+}
+
+.input-data .underline::before{
+    position: absolute;
+    content:"";
+    height: 100%;
+    width: 100%;
+    background: var(--main-color);
+    transform: scaleX(0);
+    transition: all 0.3s ease;
+}
+
+.input-data input:focus ~ .underline::before,
+.input-data input:valid ~ .underline::before{
+    transform: scaleX(1);
+
+}
+
+.wraper-footer-form p{
+    color: gray;
+    font-size: 0.8em;
+}
