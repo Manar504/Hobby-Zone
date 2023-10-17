@@ -1,4 +1,22 @@
 .Hero{
-    background: #491A85; 
+    background: #491A85;  
+height:100vh;
+flex-shrink: 0; 
     
+}  
+
+.mainImg{ 
+   
+    width: 431.303px;
+height: 365.113px; 
+margin-right:60px;
+
+} 
+
+.title{
+    width:500px; 
+    
+} 
+.search{
+    margin-top:60px;
 }
