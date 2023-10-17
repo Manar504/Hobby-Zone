@@ -11,7 +11,7 @@ const Navbar = () => {
   return (
     <div>
 
-       <nav className="navbar navbar-expand-sm navbar-light bg-transparent">
+       <nav className="navbar navbar-expand-sm navbar-dark">
      <div className="container">
     {/* <Link className="navbar-brand" href="#"><Image src={"origami"} alt='hg' width={40} height={40}></Image></Link> */}
     <button className="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +25,7 @@ const Navbar = () => {
         
         
       <form className="d-flex  my-lg-0">
-        <input className="form-control me-sm-2 rounded-5" type="text" placeholder="Search anything" />
+        <input className="form-control me-sm-2 px-5 rounded-5" type="text" placeholder="Search anything" />
         
       </form> 
       </ul>
