@@ -4,9 +4,9 @@ import Navbar from './Components/Navbar/Navbar'
 
 export default function Home() {
   return (
-    <main className={styles.main }>
+    <main >
        
-        <h1>HOBBIES</h1>
+        
     </main>
   )
 }
