@@ -40,32 +40,6 @@
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
 
-/* do not group these rules */
-*::-webkit-input-placeholder {
-  color: white;
-}
-*:-moz-placeholder {
-  /* FF 4-18 */
-  color: white;
-  opacity: 1;
-}
-*::-moz-placeholder {
-  /* FF 19+ */
-  color: white;
-  opacity: 1;
-}
-*:-ms-input-placeholder {
-  /* IE 10+ */
-  color: white;
-}
-*::-ms-input-placeholder {
-  /* Microsoft Edge */
-  color: white;
-}
-*::placeholder {
-  /* modern browser */
-  color: white;
-}
 
 
 
