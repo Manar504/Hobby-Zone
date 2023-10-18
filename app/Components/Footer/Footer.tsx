@@ -57,7 +57,7 @@ const Footer = () => {
           Gravida sed justo, justo, id est et. Amet tristique convallis sed porttitor nullam eu ut. Duis et odio aliquam bibendum. Metus et lectus id viverra fringilla magna morbi. 
           </p> 
           <form className="search">
-        <input className="form-control me-sm-2 px-5 rounded-5 w-70" type="text" placeholder="Enter email" />
+        <input className="form-control me-sm-2 px-5 rounded-5 " type="text" placeholder="Enter email" />
       </form>  
       <DeafultButton bg="#491a85" text="Subscribe" width="50%" handleClick={(e)=>{e.preventDefault();
       console.log("manar")}} />

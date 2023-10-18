@@ -10,7 +10,7 @@ import origami from "../../../public/Assets/origami/origami.png"
 
 
 const Navbar = () => {
-  const navigate =  Navigator;
+  
   return (
     <div>
        <nav className="navbar navbar-expand-sm navbar-dark">
