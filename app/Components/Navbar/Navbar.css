@@ -1,17 +1,28 @@
-.image{
-  
-     display: flex; 
-    align-items: center;
-    justify-content: center; 
-    /* background-color: aqua; */
-    height: 100%;
-}
-.profile-avatar{
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-} 
 
-.navbar{
-    background-color:#491A85 ;
+
+.navbar {
+    background-color: var(--main-color);
+    display: flex;
+    align-items: center;
+}
+
+.ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul .nav-item{
+    font-size: 0.8em;
+    margin-right: 20px;
+}
+
+.search{
+  width: 300px;
+}
+
+@media screen and (max-width: 767px) {
+    .search{
+        display: none;
+    }
 }

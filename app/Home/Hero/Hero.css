@@ -1,21 +1,40 @@
  .Hero{
 background: #491A85;  
-height:100vh;
-/*  */
-/* flex-shrink: 0;  */
-    
+display: flex; 
+align-items: center;
+height: 100vh;
+
 }  
+.Hero .row{
+   margin-bottom: 40px; 
+}
+.content{
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    justify-content: center;
+}
 
-/* .mainImg{ 
-   
-    width: 431.303px;
-height: 365.113px; 
+@media screen and (max-width: 767px) {
+    .Hero{
+        height: 100%;
+        display: flex;
+        align-items: flex-start;
+    }
 
+    .content{
+       flex: 1;
+    }
 
-}  */
+    .hero-image{
+        width: 300px;
+    }
 
-/* 
-/* .search{
-    margin-top:60px;
-}  */ 
+  }
 
+.input-email-data {
+    width: 300px;
+    background-color: transparent;
+    color: white;
+    /* border: 0.5px solid white; */
+}

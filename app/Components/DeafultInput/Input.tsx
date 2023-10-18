@@ -4,6 +4,7 @@ import React from 'react'
 type defaultProps = {
     type : string ;
     label : string ;
+    
 
 }
 
