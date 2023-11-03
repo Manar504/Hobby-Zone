@@ -1,0 +1,37 @@
+body {
+  margin: auto;
+  background-color: rgb(77, 12, 138);
+  box-sizing: border-box;
+
+}
+.main {
+  /* width: 100vw; */
+  background-color: rgb(206, 206, 206);
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 7px 7px 15px rgb(0, 0, 0);
+}
+p {
+  opacity: 0.8;
+  font-size: 13px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+input[type="email"] {
+    background-color: gray;
+    padding: 12px 20px;
+    border: none;
+    border-bottom: 5px solid rgb(77, 12, 138);
+    border-radius: 4px;
+}
+input[type="text"] {
+
+    background-color: gray;
+    padding: 12px 20px;
+    border: none;
+    border-bottom: 5px solid rgb(77, 12, 138);
+    margin: 8px 0;
+    display: inline-block;
+ 
+}
+

@@ -5,7 +5,6 @@ import Link from "next/link";
 // import origami from "../../../public/Assets/origami/origami.png"
 import Image from "next/image";
 import DeafultButton from "../DeafultButton/DeafultButton";
-
 import origami from "../../../public/Assets/origami/origami.png";
 import { useRouter } from "next/router";
 
@@ -86,10 +85,9 @@ const Navbar = () => {
               {" "}
             <Link href={"/Register"}>   <DeafultButton
                 
-                text="Sing Up"
+                text="Sign in"
                 handleClick={() => {
-                  
-                  
+                window.location.href = "/Login";
                 }}
                 width="100px"
               />{" "} </Link>
