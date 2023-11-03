@@ -1,0 +1,22 @@
+.photo {
+    display: inline-block;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+  
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+   
+    position: relative;
+  
+    
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ 
+    border: 6px solid white;
+    /* background-color: aliceblue; */
+  }
+
+  

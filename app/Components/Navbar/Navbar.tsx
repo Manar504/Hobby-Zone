@@ -7,8 +7,13 @@ import Image from "next/image";
 import DeafultButton from "../DeafultButton/DeafultButton";
 
 import origami from "../../../public/Assets/origami/origami.png";
+import { useRouter } from "next/router";
+
 
 const Navbar = () => {
+
+  // const router = useRouter(); 
+
   return (
     <div>
       <nav className="navbar navbar-expand-sm navbar-dark">
@@ -67,6 +72,11 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
+                <Link className="nav-link" href="/profile">
+                  Profile
+                </Link>
+              </li>
+              <li className="nav-item">
                 <Link className="nav-link" href="#">
                   Contact
                 </Link>
@@ -74,14 +84,15 @@ const Navbar = () => {
             </ul>
             <div className="nav-item">
               {" "}
-              <DeafultButton
-                bg="#2945FF"
+            <Link href={"/Register"}>   <DeafultButton
+                
                 text="Sing Up"
                 handleClick={() => {
-                  console.log("Clicked");
+                  
+                  
                 }}
                 width="100px"
-              />{" "}
+              />{" "} </Link>
             </div>
           </div>
         </div>
