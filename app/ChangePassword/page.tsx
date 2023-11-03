@@ -20,7 +20,6 @@ const ChangePassword = () => {
           </p>
           <form>
             <div className="form-group mt-5">
-              {/* <label htmlFor="email">Email</label> */}
               <input
                 type="password"
                 className="container-fluid  form-control mb-4"
@@ -36,8 +35,8 @@ const ChangePassword = () => {
                 required
                 placeholder="New password"
               />
-            
-            <input
+
+              <input
                 type="password"
                 className="container-fluid  form-control mb-4 mt-5"
                 id="Confirm new password"
@@ -45,13 +44,14 @@ const ChangePassword = () => {
                 placeholder="Confirm New password"
               />
               <div className="Container m-4">
-              <DeafultButton
-                bg=" rgb(77, 12, 138)"
-                text="Update Password"
-                handleClick={() => {
-                  window.location.href = "/Home";
-                }}
-              /></div>
+                <DeafultButton
+                  bg=" rgb(77, 12, 138)"
+                  text="Update Password"
+                  handleClick={() => {
+                    window.location.href = "/Home";
+                  }}
+                />
+              </div>
             </div>
             <div className="form-group">
               <p>

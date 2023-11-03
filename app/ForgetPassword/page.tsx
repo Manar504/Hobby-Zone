@@ -27,10 +27,6 @@ const forgetting = () => {
                 required
                 placeholder="name@example.com"
               />
-              {/* button send to email */}
-              {/* <button className="btn my-2 col-8 p-2 text-light rounded-5 " style={{backgroundColor:"rgb(77, 12, 138)"}}>
-              Send
-              </button> */}
               <DeafultButton
                 bg=" rgb(77, 12, 138)"
                 text="Send"
