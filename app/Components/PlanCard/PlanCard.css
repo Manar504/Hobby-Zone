@@ -1,0 +1,17 @@
+.planCard .card {
+    position: relative;
+    top: 0;
+    transition: top ease 0.5s;
+  }
+
+.planCard .card:hover{
+    background-color: var(--main-color);
+    color: white;
+    top: -30px;
+}
+
+
+.planCard .card:hover button {
+    background-color: white !important;
+    color: var(--main-color) !important; 
+}

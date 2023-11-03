@@ -111,3 +111,26 @@ a {
 Link{
   text-decoration: none;
 }
+
+
+
+
+/* 
+.card1 :hover{
+  background-color: #491A85;
+  color: #e3e4d8e7;
+scale: 1.03;
+border-radius: 20px;
+} */
+
+
+.card2 {
+  background-color: #491A85;
+  color: #e3e4d8e7;
+scale: 1.03;
+border-radius: 20px;
+}
+
+/* .card2 img {
+  background-color: #e6e1e1f0;
+} */
