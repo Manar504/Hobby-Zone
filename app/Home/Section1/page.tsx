@@ -21,7 +21,7 @@ const Section1 = () => {
         <br/><br/><br/><br/><br/><br/><br/><br/>
     </div> 
     <div className='row p-10'>
-      <div className='col right  p-40 d-flex align-items-center '> 
+      <div className='col right  d-flex align-items-center '> 
       <div className='col'>
       <h3 className='col Text'>Programming</h3> <br/>
       <p className='col Text'>Muffin lemon drops toffee <br/>
@@ -31,8 +31,8 @@ Croissant chocolate cake too <br/></p>
            </div> 
         <Image className='ms-auto' src={Illustration} alt='dks'></Image>
       </div>
-      <div className='col left  p-40 d-flex align-items-center  '> 
-       <div className='col'>
+      <div className='col left  d-flex align-items-center  '> 
+       <div className=''>
       <h3 className='col Text'>Graphic Design</h3>
       <p className='col Text'>Muffin lemon drops toffee <br/>Croissant chocolate cake tootsie roll
            Cupcake sugar<br/></p> 
