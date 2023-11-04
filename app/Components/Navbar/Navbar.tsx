@@ -6,6 +6,8 @@ import Link from "next/link";
 import Image from "next/image";
 import DeafultButton from "../DeafultButton/DeafultButton";
 
+import origami from "../../../public/Assets/origami/origami.png";
+import MyLearning from './../../Mylearning/page';
 import { useRouter } from "next/router";
 import NavItem from "./NavItem";
 import { navLinks } from "@/app/constants/Navlinks";
