@@ -7,6 +7,7 @@ import Image from "next/image";
 import DeafultButton from "../DeafultButton/DeafultButton";
 
 import origami from "../../../public/Assets/origami/origami.png";
+import MyLearning from './../../Mylearning/page';
 
 const Navbar = () => {
   return (
@@ -62,13 +63,13 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="#">
-                  About us
+                <Link className="nav-link" href="/Mylearning">
+                MyLearning
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="#">
-                  Contact
+                <Link className="nav-link" href="/Contact">
+                  Contact Us
                 </Link>
               </li>
             </ul>

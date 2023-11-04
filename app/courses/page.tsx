@@ -62,11 +62,11 @@ const Courses = () => {
         
        
 <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
-        <Card  title='Drawing' pra='intermediat' Image={course_imagex}/>  
-        <Card title='Drawing' pra='intermediat' Image={pexels_gabby}/>
-        <Card title='Drawing' pra='intermediat' Image={pexels_anna}/>
-        <Card title='Drawing' pra='intermediat' Image={pexels_thirdman}/>
-        <Card title='Drawing' pra='intermediat' Image={pexels_javier}/>
+        <Card  title='Drawing' pra='intermediat' Image={course_imagex}  />  
+        <Card title='Drawing' pra='intermediat' Image={pexels_gabby} />
+        <Card title='Drawing' pra='intermediat' Image={pexels_anna} />
+        <Card title='Drawing' pra='intermediat' Image={pexels_thirdman} />
+        <Card title='Drawing' pra='intermediat' Image={pexels_javier} />
         <Card title='Drawing' pra='intermediat' Image={post_sample}/>
 
 
