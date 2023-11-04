@@ -10,10 +10,6 @@ export default function Main() {
   return (
     <main>
       <Home />
-      <script
-        defer
-        src="https://webkeyz.github.io/stand-with-palestine/dist/stand-with-palestine-widget.js"
-      ></script>
     </main>
   );
 }
