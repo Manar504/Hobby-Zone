@@ -5,11 +5,15 @@ import Link from "next/link";
 // import origami from "../../../public/Assets/origami/origami.png"
 import Image from "next/image";
 import DeafultButton from "../DeafultButton/DeafultButton";
-
 import origami from "../../../public/Assets/origami/origami.png";
 import MyLearning from './../../Mylearning/page';
+import { useRouter } from "next/router";
+
 
 const Navbar = () => {
+
+  // const router = useRouter(); 
+
   return (
     <div>
       <nav className="navbar navbar-expand-sm navbar-dark">
@@ -63,8 +67,13 @@ const Navbar = () => {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" href="/Mylearning">
-                MyLearning
+                <Link className="nav-link" href="#">
+                  About us
+                </Link>
+              </li>
+              <li className="nav-item">
+                <Link className="nav-link" href="/profile">
+                  Profile
                 </Link>
               </li>
               <li className="nav-item">
@@ -75,14 +84,14 @@ const Navbar = () => {
             </ul>
             <div className="nav-item">
               {" "}
-              <DeafultButton
-                bg="#2945FF"
-                text="Sing Up"
+            <Link href={"/Register"}>   <DeafultButton
+                
+                text="Sign in"
                 handleClick={() => {
-                  console.log("Clicked");
+                window.location.href = "/Login";
                 }}
                 width="100px"
-              />{" "}
+              />{" "} </Link>
             </div>
           </div>
         </div>

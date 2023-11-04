@@ -18,7 +18,7 @@ const Hero = () => {
       <form >
         <input className="input-email-data  form-control px-3  rounded-5" type="text" placeholder="Enter your email adress" />
       </form>  
-      <DeafultButton bg="#2945FF" text="Join Class" width="200px"  handleClick={(e)=>{e.preventDefault();
+      <DeafultButton   text="Join Class" width="200px"  handleClick={(e)=>{e.preventDefault();
       console.log("manar")}} />
          </div>
       
