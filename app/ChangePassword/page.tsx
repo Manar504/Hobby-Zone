@@ -4,6 +4,7 @@ import "./main.css";
 import Image from "next/image";
 import DeafultButton from "../Components/DeafultButton/DeafultButton";
 import S from "../../public/s.png";
+import DeafultInput from "../Components/DeafultInput/Input";
 
 const ChangePassword = () => {
   return (
@@ -13,55 +14,29 @@ const ChangePassword = () => {
     >
       <div className="row ">
         <div className="col-sm-12 mt-5 ">
-          <h1>Change Your Password</h1>
+          <h2>Change Your Password</h2>
           <p className="mt-3">
             please Enter your current password and new password reset your
             password.
           </p>
           <form>
-            <div className="form-group mt-5">
-              <input
-                type="password"
-                className="container-fluid  form-control mb-4"
-                id="password"
-                required
-                placeholder="Current password"
-              />
+            <div className="form-group mt-5 ">
+              <DeafultInput label="Current password" type="password" />
 
-              <input
-                type="password"
-                className="container-fluid  form-control mb-3 mt-4"
-                id="new password"
-                required
-                placeholder="New password"
-              />
+              <DeafultInput label="New password" type="password" />
 
-              <input
-                type="password"
-                className="container-fluid  form-control mb-4 mt-5"
-                id="Confirm new password"
-                required
-                placeholder="Confirm New password"
-              />
-              <div className="Container m-4">
-                <DeafultButton
-                  bg=" rgb(77, 12, 138)"
-                  text="Update Password"
-                  handleClick={() => {
-                    window.location.href = "/Home";
-                  }}
-                />
-              </div>
+              <DeafultInput label="Confirm New password" type="password" />
+
+              <button
+                className="btn my-2 col-8 p-2 text-light rounded-3 "
+                style={{ backgroundColor: "rgb(77, 12, 138)" }}
+              >
+                Update Password
+              </button>
             </div>
+
             <div className="form-group">
-              <p>
-                Already have an account? <a href="/Login">Login</a>
-              </p>
-            </div>
-            <div className="form-group">
-              <p>
-                Dont have an account? <a href="/Register">Register</a>
-              </p>
+              <a href="/Login">Forgot Current Password?</a>
             </div>
           </form>
           <div>
@@ -70,7 +45,7 @@ const ChangePassword = () => {
               src={S}
               alt="Picture of the author"
             />
-          </div>{" "}
+          </div>
         </div>
       </div>
     </div>

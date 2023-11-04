@@ -1,0 +1,72 @@
+.otpContainer {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 20px;
+    }
+    
+    .otpContainer input {
+     outline: 0 !important;
+     user-select: none !important;
+     width: 70px;
+     height:70px;
+     background-color: #fff;
+     font-weight: bold !important;
+     border-radius: 16px;
+     border: 1px solid #D8DADC !important;
+     line-height: 50px;
+     text-align: center;
+     font-size: 24px;
+     color: var(--main-color);
+     margin: 0;
+     -webkit-border-radius: 16px;
+     -moz-border-radius: 16px;
+     -ms-border-radius: 16px;
+     -o-border-radius: 16px;
+}
+    
+    .otpContainer input:focus {
+     border: 1px solid var(--main-color) !important;
+    }
+    
+    .otpContainer input:active {
+     border: 1px solid var(--main-color) !important;
+    }
+    
+    .otpContainer .splitter {
+     padding: 5px 0;
+     color: rgb(0, 0, 0);
+     font-size: 25px;
+     margin: 0;
+    }
+    
+    .prompt {
+     margin-bottom: 20px;
+     font-size: 20px;
+     color: white;
+    }
+    
+    .formSection {
+     max-width: 500px;
+     margin: auto;
+     border-radius: 10px;
+     box-shadow: 0px 0px 8px #ddd;
+     padding: 20px;
+    }
+    
+    .w-100 {
+     width: 100%;
+    }
+    
+    /* Media query for mobile devices */
+    @media (max-width: 480px) {
+     .otpContainer {
+      gap: 5px !important;
+     }
+     .otpContainer input {
+      width: 40px !important;
+     }
+     .otpContainer .splitter {
+      font-size: 25px !important;
+     }
+    }
