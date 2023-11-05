@@ -11,8 +11,12 @@ type CardProps = {
 
 const Card = (props: CardProps) => {
   return (
-    <div className="card  border border-0">
-      <Image src={props.Image} className="card-img-top" alt="Fissure in Sandstone" />
+    <div className="card">
+      <Image
+        src={props.Image}
+        className="card-img-top"
+        alt="Fissure in Sandstone"
+      />
       <div className="card-body">
         <h5 className="card-title">{props.title}</h5>
         <p className="card-text">{props.pra}</p>
@@ -21,7 +25,7 @@ const Card = (props: CardProps) => {
             className="progress-bar"
             role="progressbar"
             style={{ width: props.width }}
-            aria-valuenow={parseInt(props.width, 10)} // Assuming width is a string representing a number
+            aria-valuenow={parseInt(props.width!, 10)} // Assuming width is a string representing a number
             aria-valuemin={0}
             aria-valuemax={100}
           />
