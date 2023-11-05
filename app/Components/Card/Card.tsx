@@ -11,7 +11,7 @@ type CardProps = {
 
 const Card = (props: CardProps) => {
   return (
-    <div className="card">
+    <div className="card  border border-0">
       <Image src={props.Image} className="card-img-top" alt="Fissure in Sandstone" />
       <div className="card-body">
         <h5 className="card-title">{props.title}</h5>
@@ -27,7 +27,8 @@ const Card = (props: CardProps) => {
           />
         </div>
         <DeafultButton
-          bg="#2945FF"
+        bg='#491A85'
+          color='white'
           text="Join Class"
           width="200px"
           handleClick={(e) => {
