@@ -5,9 +5,13 @@ import Link from "next/link";
 // import origami from "../../../public/Assets/origami/origami.png"
 import Image from "next/image";
 import DeafultButton from "../DeafultButton/DeafultButton";
+
 import origami from "../../../public/Assets/origami/origami.png";
 import MyLearning from './../../Mylearning/page';
 import { useRouter } from "next/router";
+import NavItem from "./NavItem";
+import { navLinks } from "@/app/constants/Navlinks";
+import Logo from "../Logo/Logo";
 
 
 const Navbar = () => {
@@ -19,7 +23,7 @@ const Navbar = () => {
       <nav className="navbar navbar-expand-sm navbar-dark">
         <div className="container hoby-nav">
           <Link className="navbar-brand" href="#">
-            <Image src={origami} alt="hg" width={40} height={40}></Image>
+           <Logo/>
           </Link>
           <button
             className="navbar-toggler d-lg-none"
@@ -37,7 +41,7 @@ const Navbar = () => {
             <ul className="navbar-nav  mt-2 mt-lg-0">
               <li className="nav-item">
                 <Link className="nav-link active" href="#" aria-current="page">
-                  {" "}
+                  
                   <span className="visually-hidden">(current)</span>
                 </Link>
               </li>
@@ -51,39 +55,12 @@ const Navbar = () => {
             </ul>
 
             <ul className="navbar-nav ms-auto mt-2 mt-lg-0">
-              <li className="nav-item">
-                <Link className="nav-link active" href="/" aria-current="page">
-                  Home <span className="visually-hidden">(current)</span>
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" href="/courses">
-                  Courses
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" href="/prices">
-                  Prices
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" href="#">
-                  About us
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" href="/profile">
-                  Profile
-                </Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" href="/Contact">
-                  Contact Us
-                </Link>
-              </li>
+             {navLinks.map((item,index)=> <NavItem key={index} text={item} url={`/${item}`} /> )}
+            
             </ul>
             <div className="nav-item">
-              {" "}
+              
+
             <Link href={"/Register"}>   <DeafultButton
                 
                 text="Sign in"
@@ -91,7 +68,7 @@ const Navbar = () => {
                 window.location.href = "/Login";
                 }}
                 width="100px"
-              />{" "} </Link>
+              /> </Link>
             </div>
           </div>
         </div>

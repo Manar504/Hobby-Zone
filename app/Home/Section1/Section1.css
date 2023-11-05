@@ -17,6 +17,36 @@
 }
 
 
+.right:hover {
+    background-color: #A6D4C4;
+    
+}
+
+.left:hover {
+    background-color: #D1D3D4;
+}
+
+.right:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+
+.left:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+}
+.right:hover .Text {
+    color: #FF5733;
+}
+
+.left:hover .Text {
+    color: #FF5733;
+}
+
+
+
+
+
+
+
 
 
 
