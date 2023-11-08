@@ -15,7 +15,7 @@ const DeafultButton = (props: ButtonProps) => {
   const defaultBgColor = "white";
   return (
     <button
-      className="deafult-button btn btn-lg my-3 rounded rounded-pill"
+      className="deafult-button btn btn-lg my-3 rounded rounded-pill col-12"
       style={{
         width: `${props.width}`,
         backgroundColor: props.bg || defaultBgColor,

@@ -37,6 +37,7 @@ const Card = (props: CardProps) => {
           handleClick={(e) => {
             e.preventDefault();
             console.log("manar");
+            window.location.href="/CourseDetails"
           }}
         />
       </div>
