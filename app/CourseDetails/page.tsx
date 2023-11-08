@@ -27,55 +27,50 @@ const CourseDetail = () => {
       <header></header>
       <div className="container-fluide">
         <div className="row">
-
-
           <div className="container-fluide mx-3 col-lg-7 ">
-
-
             <div className=" d-flex  justify-content-around">
-            <div>
-              <DeafultButton
-                bg=" rgb(77, 12, 138)"
-                text="OverView"
-                color="white"
-                handleClick={() => {
-                  console.log("Abdelrahman");
-                }}
-              />
-            </div>{" "}
-            <div>
-              <DeafultButton
-                bg=" rgb(77, 12, 138)"
-                text="OverView"
-                color="white"
-                handleClick={() => {
-                  console.log("Abdelrahman");
-                }}
-              />
-            </div>{" "}
-            <div>
-              <DeafultButton
-                bg=" rgb(77, 12, 138)"
-                text="OverView"
-                color="white"
-                handleClick={() => {
-                  console.log("Abdelrahman");
-                }}
-              />
-            </div>{" "}
-            <div>
-              <DeafultButton
-                bg=" rgb(77, 12, 138)"
-                text="OverView"
-                color="white"
-                handleClick={() => {
-                  console.log("Abdelrahman");
-                }}
-              />
-            </div>
+              <div>
+                <DeafultButton
+                  bg=" rgb(77, 12, 138)"
+                  text="OverView"
+                  color="white"
+                  handleClick={() => {
+                    console.log("Abdelrahman");
+                  }}
+                />
+              </div>{" "}
+              <div>
+                <DeafultButton
+                  bg=" rgb(77, 12, 138)"
+                  text="OverView"
+                  color="white"
+                  handleClick={() => {
+                    console.log("Abdelrahman");
+                  }}
+                />
+              </div>{" "}
+              <div>
+                <DeafultButton
+                  bg=" rgb(77, 12, 138)"
+                  text="OverView"
+                  color="white"
+                  handleClick={() => {
+                    console.log("Abdelrahman");
+                  }}
+                />
+              </div>{" "}
+              <div>
+                <DeafultButton
+                  bg=" rgb(77, 12, 138)"
+                  text="OverView"
+                  color="white"
+                  handleClick={() => {
+                    console.log("Abdelrahman");
+                  }}
+                />
+              </div>
             </div>
 
-          {/* <div className="container-fluide "> */}
             <div className="main my-5 mx-3 rounded-5 p-3">
               <div className="d-flex justify-content-around">
                 <div
@@ -142,10 +137,7 @@ const CourseDetail = () => {
                     style={{ width: "15em" }}
                   ></meter>
                 </div>
-
               </div>
-
-
 
               <div className="d-flex gap-2 mt-3">
                 <Image
@@ -210,101 +202,86 @@ const CourseDetail = () => {
                 dolore. Et ratione consectetur nemo commodi!
               </p>
             </div>
+          </div>
+
+          {/*  */}
+          <div className=" col-lg-4 my-5 p-3 rounded-5 shadow-lg">
+            <div>
+              <Image
+                className="p-3 d-flex rounded-5 shadow-lg  mx-auto"
+                src={img1}
+                width={320}
+                height={300}
+                alt="Picture of the author"
+              />
             </div>
 
-            {/* </div> */}
-
-
-{/*  */}
-            <div className=" col-lg-4 my-5 p-3 rounded-5 shadow-lg">
-
-              <div>
-                <Image
-                  className="p-3 d-flex rounded-5 shadow-lg  mx-auto"
-                  src={img1}
-                  width={320}
-                  height={300}
-                  alt="Picture of the author"
+            <div className="d-flex align-items-center gap-5 justify-content-between my-2">
+              <h3> 94.65$ </h3>
+              <span className="strikethrough"> $100</span>
+              <span className="transparent-bg">50%off</span>
+            </div>
+            <div className="col-md-6 col-lg-6"></div>
+            <div className="row">
+              <div className="col-md-12 col-lg-12 text-center">
+                <p>
+                  <b>11 Hour Left at this price</b>{" "}
+                </p>
+              </div>
+            </div>
+            <div className="row">
+              <div className="col-md-12 col-lg-12">
+                <DeafultButton
+                  bg=" rgb(77, 12, 138)"
+                  text="Buy Now"
+                  color="white"
+                  handleClick={() => {
+                    window.location.href = "CartPage";
+                  }}
                 />
               </div>
-
-
-
-              {/* <div className="container"> */}
-                {/* <div className="row"> */}
-                  {/* <div className="col-md-6 col-lg-6"> */}
-                    <div className="d-flex align-items-center gap-5 justify-content-between my-2">
-                      <h3> 94.65$ </h3>
-                      <span className="strikethrough"> $100</span>
-                      <span className="transparent-bg">50%off</span>
-                    </div>
-                  {/* </div> */}
-                  <div className="col-md-6 col-lg-6"></div>
-                {/* </div> */}
-                <div className="row">
-                  <div className="col-md-12 col-lg-12 text-center">
-                    <p>
-                      <b>11 Hour Left at this price</b>{" "}
-                    </p>
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-md-12 col-lg-12">
-                    <DeafultButton
-                      bg=" rgb(77, 12, 138)"
-                      text="Buy Now"
-                      color="white"
-                      handleClick={() => {
-                        window.location.href = "CartPage";
-                      }}
-                    />
-                  </div>
-                </div>
-                <div className="row">
-                  <div className="col-md-12 col-lg-12">
-                    <hr />
-                    <h4>This Course Included </h4>
-                    <div className="d-flex align-items-center">
-                      <FiDollarSign className="icon" />
-                      <span>Money Back Guarantee</span>
-                    </div>
-                    <div className="d-flex align-items-center">
-                      <FiCamera className="icon" />
-                      <span>Access on all devices</span>
-                    </div>
-                    <div className="d-flex align-items-center">
-                      <FiFileMinus className="icon" />
-                      <span>certification of completion</span>
-                    </div>
-                    <div className="d-flex align-items-center">
-                      <FiTrendingUp className="icon" />
-                      <span>32 moduls</span>
-                    </div>
-                    <hr />
-                    <h3>Training 5 or more people</h3>
-                    <p>
-                      Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                      Ut ullam amet excepturi, iusto iste accusamus praesentium
-                      expedita cum animi ratione aspernatur deserunt. Numquam.
-                    </p>
-                    <hr />
-                    <h3>Shear this course</h3>
-                    <div className="d-flex align-items-center justify-content-around my-3">
-                      <FiFacebook className="icon" />
-                      <FiYoutube className="icon" />
-                      <FiSend className="icon" />
-                      <FiInstagram className="icon" />
-                      <FiTwitter className="icon" />
-                    </div>
-                  </div>
-                </div>
-              {/* </div> */}
             </div>
-          
+            <div className="row">
+              <div className="col-md-12 col-lg-12">
+                <hr />
+                <h4>This Course Included </h4>
+                <div className="d-flex align-items-center">
+                  <FiDollarSign className="icon" />
+                  <span>Money Back Guarantee</span>
+                </div>
+                <div className="d-flex align-items-center">
+                  <FiCamera className="icon" />
+                  <span>Access on all devices</span>
+                </div>
+                <div className="d-flex align-items-center">
+                  <FiFileMinus className="icon" />
+                  <span>certification of completion</span>
+                </div>
+                <div className="d-flex align-items-center">
+                  <FiTrendingUp className="icon" />
+                  <span>32 moduls</span>
+                </div>
+                <hr />
+                <h3>Training 5 or more people</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut
+                  ullam amet excepturi, iusto iste accusamus praesentium
+                  expedita cum animi ratione aspernatur deserunt. Numquam.
+                </p>
+                <hr />
+                <h3>Shear this course</h3>
+                <div className="d-flex align-items-center justify-content-around my-3">
+                  <FiFacebook className="icon" />
+                  <FiYoutube className="icon" />
+                  <FiSend className="icon" />
+                  <FiInstagram className="icon" />
+                  <FiTwitter className="icon" />
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
-
-
 
       {/* Card */}
       <div className="container-fluide">
