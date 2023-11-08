@@ -1,12 +1,12 @@
-import React from "react";
-import Image, { StaticImageData } from "next/image";
-import DeafultButton from "../DeafultButton/DeafultButton";
+import React from 'react';
+import Image, { StaticImageData } from 'next/image';
+import DeafultButton from '../DeafultButton/DeafultButton';
 
 type CardProps = {
   Image: StaticImageData;
   title: string;
   pra: string;
-  width?: string;
+  width?: string; 
 };
 
 const Card = (props: CardProps) => {
@@ -31,7 +31,8 @@ const Card = (props: CardProps) => {
           />
         </div>
         <DeafultButton
-          bg="#2945FF"
+        bg='#491A85'
+          color='white'
           text="Join Class"
           width="200px"
           handleClick={(e) => {
@@ -46,3 +47,4 @@ const Card = (props: CardProps) => {
 };
 
 export default Card;
+

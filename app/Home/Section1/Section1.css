@@ -2,6 +2,7 @@
     background-color: #a6d4c454;
     padding: 40px; 
     margin: 20px;
+    transition: transform 0.8s;
     
 } 
 
@@ -10,6 +11,7 @@
     background-color: #d1d3d489;
     padding: 40px;
     margin: 20px;
+    transition: transform 0.8s;
 }  
 
 .Text{
@@ -19,27 +21,26 @@
 
 .right:hover {
     background-color: #A6D4C4;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05) rotate(-3deg);
+    transition: transform 0.8s;
+    transform: scale(1.05) rotate(3deg);
+    transition: transform 0.8s;
+    
     
 }
 
 .left:hover {
     background-color: #D1D3D4;
-}
-
-.right:hover {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.05) rotate(-3deg);
+    transition: transform 0.8s;
+    transform: scale(1.05) rotate(3deg);
+    transition: transform 0.8s;
 }
 
-.left:hover {
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-.right:hover .Text {
-    color: #FF5733;
-}
 
-.left:hover .Text {
-    color: #FF5733;
-}
 
 
 
