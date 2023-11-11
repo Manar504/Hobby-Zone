@@ -3,7 +3,7 @@ import React from "react";
 import Image from "next/image";
 import "./main.css";
 import DeafultButton from "../Components/DeafultButton/DeafultButton";
-import ReactStars from "react-stars";
+// import ReactStars from "react-stars";
 import img4 from "../../public/American_Express-Logo.wine.svg";
 import img5 from "../../public/mastercard-3-svgrepo-com.svg";
 import img6 from "../../public/Visa Payment Card.svg";
@@ -117,7 +117,7 @@ const Cart = () => {
             <hr />
             <div className="row">
               <div className="col mx-2">
-                <img
+                <Image
                   className="img  p-1 mb-5 bg-light"
                   src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt=""
@@ -137,7 +137,7 @@ const Cart = () => {
             <hr />
             <div className="row">
               <div className="col mx-2">
-                <img
+                <Image
                   className="img  p-1 mb-5 bg-light"
                   src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
                   alt=""
