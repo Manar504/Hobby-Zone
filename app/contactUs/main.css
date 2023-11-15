@@ -1,0 +1,25 @@
+h1 ,p{
+    color: rebeccapurple;
+    text-align: center;
+    margin: 15px 0px;
+    padding: 10px;
+}
+
+.side{
+    background-color: blueviolet;
+}
+
+.inp{
+    border: none;
+    border-bottom: 1px solid black;
+    width: 100%;
+
+}
+
+/* .inp::placeholder{
+    background-color:grey;
+} */
+
+.icon{
+    font-size: 20px;
+}
