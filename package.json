@@ -17,9 +17,14 @@
     "bootstrap": "^5.3.2",
     "next": "13.5.4",
     "react": "^18",
+    "react-bootstrap": "^2.9.0-beta.1",
     "react-dom": "^18",
     "react-icons": "^4.11.0",
-    "react-stars": "^2.2.5"
+    "react-id-swiper": "^4.0.0",
+    "react-slick": "^0.29.0",
+    "react-stars": "^2.2.5",
+    "slick-carousel": "^1.8.1",
+    "swiper": "^11.0.4"
   },
   "devDependencies": {
     "@types/node": "^20",

@@ -34,7 +34,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/Components/OtpInput/OtpInput.jsx"
-  ],
+, "app/Components/Swiper/page.js"  ],
   "exclude": [
     "node_modules"
   ]
