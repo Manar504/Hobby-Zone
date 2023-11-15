@@ -8,6 +8,7 @@ import img4 from "../../public/American_Express-Logo.wine.svg";
 import img5 from "../../public/mastercard-3-svgrepo-com.svg";
 import img6 from "../../public/Visa Payment Card.svg";
 import img7 from "../../public/paypal-svgrepo-com.svg";
+import img8 from "../../public/mmm.png";
 
 const Cart = () => {
   return (
@@ -119,8 +120,9 @@ const Cart = () => {
               <div className="col mx-2">
                 <Image
                   className="img  p-1 mb-5 bg-light"
-                  src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
+                  src={img8}
                   alt=""
+                  
                 />
               </div>
               <div className="col">
@@ -139,8 +141,8 @@ const Cart = () => {
               <div className="col mx-2">
                 <Image
                   className="img  p-1 mb-5 bg-light"
-                  src="https://images.pexels.com/photos/3861958/pexels-photo-3861958.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1"
-                  alt=""
+                  src={img8}   
+                                 alt=""
                 />
               </div>
               <div className="col">

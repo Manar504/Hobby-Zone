@@ -1,0 +1,76 @@
+/* #app { height: 100% } */
+html,
+body {
+  position: relative;
+  height: 100%;
+}
+
+body {
+  background: #eee;
+  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 14px;
+  color: #000;
+  margin: 0;
+  padding: 0;
+}
+
+.swiper {
+    /* background-color:rebeccapurple; */
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+
+}
+
+.img1 {
+    background-image: url(https://images.pexels.com/photos/874158/pexels-photo-874158.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+.img2 {
+    background-image: url(https://images.pexels.com/photos/8785848/pexels-photo-8785848.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+.img3 {
+    background-image: url(https://images.pexels.com/photos/1065084/pexels-photo-1065084.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: center;
+  width: 300px;
+  height: 300px;
+  border-radius: 50%;
+}
+
+
+/* .swiper-slide img {
+  display: block;
+  width: 100%;
+} */
+
+.name{
+    position: absolute;
+    background-color: blueviolet;
+margin-bottom: 0px;
+color: white; 
+bottom: 0px;
+width: 100%;
+text-align: center;
+border-radius: 0px 50px ;
+padding: 15px;
+
+}
