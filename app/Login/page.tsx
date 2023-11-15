@@ -13,9 +13,7 @@ import Image from "next/image";
 
 
 const Login = () => {
-  function x() {
-    console.log("x+y");
-  }
+  
   return (
     <div className="container ">
       <div className="row ">
@@ -75,6 +73,10 @@ const Login = () => {
           <Image src={logo} width={150} alt="a" />
         </div>
       </div>
+      <button >INCREMENT</button>
+      <h2>0</h2>
+      <button>DECREMENT</button>
+
     </div>
   );
 };
