@@ -7,7 +7,7 @@ import Script from "next/script";
 import Image from "next/image";
 import test from "../public/next.svg";
 import Footer from "./Components/Footer/Footer";
-
+import { Providers } from "./GlobalRedux/provider";
 const inter = Inter({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
@@ -23,15 +23,23 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={inter.className}>
+      <Providers>
         <Navbar />
+       
         {children}
+      
         <Footer />
+<<<<<<< HEAD
         {/* <Script
+=======
+        </Providers>
+        <Script
+>>>>>>> 12bb6dc062fcb31c5e1dfdff36f4c29ea9399695
           src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
           integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
           crossOrigin="anonymous"
         />
-        <Script
+        {/* <Script
           defer
           src="https://webkeyz.github.io/stand-with-palestine/dist/stand-with-palestine-widget.js"
         /> */}

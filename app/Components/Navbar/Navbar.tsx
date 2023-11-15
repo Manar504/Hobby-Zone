@@ -22,7 +22,7 @@ const Navbar = () => {
     <div>
       <nav className="navbar navbar-expand-sm navbar-dark">
         <div className="container hoby-nav">
-          <Link className="navbar-brand" href="#">
+          <Link className="navbar-brand" href="/">
            <Logo/>
           </Link>
           <button
@@ -40,7 +40,7 @@ const Navbar = () => {
           <div className="collapse navbar-collapse" id="collapsibleNavId">
             <ul className="navbar-nav  mt-2 mt-lg-0">
               <li className="nav-item">
-                <Link className="nav-link active" href="#" aria-current="page">
+                <Link className="nav-link active" href="/" aria-current="page">
                   
                   <span className="visually-hidden">(current)</span>
                 </Link>
@@ -55,20 +55,18 @@ const Navbar = () => {
             </ul>
 
             <ul className="navbar-nav ms-auto mt-2 mt-lg-0">
-             {navLinks.map((item,index)=> <NavItem key={index} text={item} url={`/${item}`} /> )}
+             {navLinks.map((item,index)=> <NavItem key={index} text={item} url={`/${item =="Home" ? "" : item}`} /> )}
             
             </ul>
             <div className="nav-item">
               
 
-            <Link href={"/Register"}>   <DeafultButton
+               <DeafultButton
                 
                 text="Sign in"
-                handleClick={() => {
-                window.location.href = "/Login";
-                }}
+                navigate="/Login"
                 width="100px"
-              /> </Link>
+              /> 
             </div>
           </div>
         </div>
