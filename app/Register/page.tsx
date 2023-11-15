@@ -33,7 +33,7 @@ const Register = () => {
   const handleRegister = async (e: React.FormEvent) => {
     e.preventDefault();
     // registerUser(formData);
-    let response = await axios.post("http://bensize.kirellos.com/api/V1/register",{
+    let response = await axios.post("https://bensize.kirellos.com/api/V1/register",{
       "phone": "0121321546" ,
         "pssword": "88888888888888",
         "username":"ZZZ",

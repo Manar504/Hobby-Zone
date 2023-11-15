@@ -34,7 +34,7 @@
     "**/*.tsx",
     ".next/types/**/*.ts",
     "app/Components/OtpInput/OtpInput.jsx"
-  ],
+, "app/GlobalRedux/store.js", "app/courses/page.jsx", "app/page.tsx", "app/Components/Card/Card.tsx"  ],
   "exclude": [
     "node_modules"
   ]

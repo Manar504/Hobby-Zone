@@ -1,7 +1,8 @@
 "use client";
 
 import { Provider } from "react-redux";
-import { store } from "./store";
+import { Store } from "./store";
+
 
     type props = {
         children:React.ReactNode
@@ -9,7 +10,7 @@ import { store } from "./store";
 
 export function Providers ({children}:props){
     console.log('Rendering Providers component'); 
-    return <Provider store={store}>
+    return <Provider store={Store}>
         {children}
          </Provider>
 }

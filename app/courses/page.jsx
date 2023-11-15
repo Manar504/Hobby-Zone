@@ -1,6 +1,6 @@
 "use client"
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import Card from '../Components/Card/Card';
 import Image from 'next/image';
 import Rectangle_180 from "../../public/Assets/course image/Rectangle 180.png";
@@ -18,24 +18,32 @@ import group from "../../public/Assets/Group 451.png";
 import group1 from "../../public/Assets/Group 7.png";
 import { DefaultContext } from 'react-icons';
 import DeafultButton from '../Components/DeafultButton/DeafultButton';
+import { useDispatch, useSelector } from 'react-redux';
+import { fetchCourses } from '../GlobalRedux/allcoursesSlice';
 
 
 
 
 const Courses = () => {
+  const dispatch = useDispatch();
+  const courses = useSelector(state => state.courses);
+  let myCourses = courses.data || [];
+  useEffect(()=>{
+    dispatch(fetchCourses());
+  },[])
   return (
     <div className='container-fluid'>
       <div className='row hero-row'>
 
         <div className='hero '>
-            <Image alt='congrats' className='success-section' src={group}  width={400}/>          <div className='details'>
+          <Image alt='congrats' className='success-section' src={group} width={400} />          <div className='details'>
             <h3 className='content'> <span className='span' style={{ color: `orangered`, fontWeight: "bolder" }}>  Studying </span> Online is now much easier</h3>
             <p className='text-light '>Hobbies is an interesting platform that will teach you in more an interactive way</p>
             <div className='player-section d-flex'>
               <div className='join-btn text-light '> join class now</div>
-              
-             
-              
+
+
+
             </div>
 
 
@@ -61,12 +69,13 @@ const Courses = () => {
             <p className="lead text-body-secondary">find your favorite course</p>
 
             <li className="search w-100 d-flex flex-row ">
-              <input type="text"  className='search  form-control mx-3 bg-transparent  text-center rounded rounded-pill ' placeholder='search'  />
-             <DeafultButton   text='serch' bg='#491A85' color='white' width='100px' handleClick={
-              ()=>{}
-             }/>
+              <input type="text" className='search  form-control mx-3 bg-transparent  text-center rounded rounded-pill ' placeholder='search' />
+              <DeafultButton text='serch' bg='#491A85' color='white' width='300px' handleClick={
+                () => {}
+              } />
             </li>
-
+       
+              
 
           </div>
         </div>
@@ -85,13 +94,12 @@ const Courses = () => {
 
 
 
-          <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
-          <Card title='Drawing' pra='intermediat' Image={course_imagex} />
-          <Card title='Drawing' pra='intermediat' Image={pexels_gabby} />
-          <Card title='Drawing' pra='intermediat' Image={pexels_anna} />
-          <Card title='Drawing' pra='intermediat' Image={pexels_thirdman} />
-          <Card title='Drawing' pra='intermediat' Image={pexels_javier} />
-          <Card title='Drawing' pra='intermediat' Image={post_sample} />
+        <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
+              
+            {myCourses.map((course , index)=> <Card key={index} courseId={course.id} title={course.name} pra={course.category.name}  Image={course.image} /> )}
+      
+    
+     
 
 
 

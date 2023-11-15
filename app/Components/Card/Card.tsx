@@ -3,7 +3,7 @@ import Image, { StaticImageData } from 'next/image';
 import DeafultButton from '../DeafultButton/DeafultButton';
 
 type CardProps = {
-  Image: StaticImageData;
+  Image: string;
   title: string;
   pra: string;
   width?: string; 
@@ -12,7 +12,8 @@ type CardProps = {
 const Card = (props: CardProps) => {
   return (
     <div className="card">
-      <Image
+      <img
+     
         src={props.Image}
         className="card-img-top"
         alt="Fissure in Sandstone"
