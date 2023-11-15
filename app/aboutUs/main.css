@@ -1,0 +1,11 @@
+header{
+    height: 500px;
+    background-image: url(../../public/Assets/about/postive-caring-relationships-teachers\ 1.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+h6{
+    margin-top: 20px;
+}
