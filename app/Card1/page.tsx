@@ -15,7 +15,7 @@ interface CardProps {
   rightPrice: string;
 }
 
-const CardOne: React.FC<CardProps> = ({
+const Card: React.FC<CardProps> = ({
     imageSrc,
   designText,
   durationText,
@@ -59,4 +59,4 @@ const CardOne: React.FC<CardProps> = ({
   );
 };
 
-export default CardOne;
+export default Card;
