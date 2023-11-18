@@ -20,14 +20,14 @@ const DeafultButton = (props: ButtonProps) => {
   return (
     <button
       type={props.type || "button"}
-      className="deafult-button btn btn-m my-3 rounded rounded-pill col-12"
+      className="deafult-button btn btn-m my-3 col-12"
       style={{
         width: `${props.width}`,
         backgroundColor: props.bg || defaultBgColor,
         color: props.color || "black",
       }}
 
-       onClick={()=> props.navigate != null ?  router.push(props.navigate!) : props.handleClick }
+       onClick={()=> props.navigate !== null ?  router.push(props.navigate!) : props.handleClick }
       
       
     >

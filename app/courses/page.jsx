@@ -12,7 +12,7 @@ import pexels_thirdman from "../../public/Assets/course image/pexels-thirdman-72
 import pexels_javier from "../../public/Assets/course image/pexels-javier-gonzalez-89625@3x.png";
 import post_sample from "../../public/Assets/course image/pexels-karolina-grabowska-4498294@3x.png";
 import Hero from '../Home/Hero/page';
-import teenager from "../../public/Assets/lovely-teenage-girl-with-curly-hair-posing-yellow-tshirt-min 1.png";
+import teenager from "../../public/image 1.svg";
 import playerIcon from "../../public/Assets/Group 4.svg";
 import group from "../../public/Assets/Group 451.png";
 import group1 from "../../public/Assets/Group 7.png";
@@ -28,19 +28,22 @@ const Courses = () => {
   const dispatch = useDispatch();
   const courses = useSelector(state => state.courses);
   let myCourses = courses.data || [];
-  useEffect(()=>{
+  useEffect(() => {
     dispatch(fetchCourses());
-  },[])
+
+  }, [])
   return (
     <div className='container-fluid'>
       <div className='row hero-row'>
 
         <div className='hero '>
           <Image alt='congrats' className='success-section' src={group} width={400} />          <div className='details'>
-            <h3 className='content'> <span className='span' style={{ color: `orangered`, fontWeight: "bolder" }}>  Studying </span> Online is now much easier</h3>
+            <h3 className='content'> <span className='span' style={{ color: `orangered`, fontWeight: "bolder" }}>  Studying </span>Learning and
+              teaching online,
+              made easy.</h3>
             <p className='text-light '>Hobbies is an interesting platform that will teach you in more an interactive way</p>
             <div className='player-section d-flex'>
-              <div className='join-btn text-light '> join class now</div>
+            <button className="custom-btn btn-8 m-0 "><span>Exploere Now</span></button>
 
 
 
@@ -49,7 +52,7 @@ const Courses = () => {
 
           </div>
           <div className='hero-image'>
-            <Image src={teenager} alt='teenager' width={300} className='' />
+            <Image src={teenager} alt='teenager' width={450} className='' />
           </div>
 
 
@@ -65,17 +68,24 @@ const Courses = () => {
       <section className="py-3 text-center container">
         <div className="row py-lg-5">
           <div className="col-lg-6 col-md-8 mx-auto">
-            <h1 className="fw-medium">Search among <span>58340</span> courses</h1>
-            <p className="lead text-body-secondary">find your favorite course</p>
+            <h2 className="fw-bold">Creativity
+              Masterclass</h2>
+            <p className="lead text-body-secondary">Find your favorite course</p>
 
-            <li className="search w-100 d-flex flex-row ">
-              <input type="text" className='search  form-control mx-3 bg-transparent  text-center rounded rounded-pill ' placeholder='search' />
-              <DeafultButton text='serch' bg='#491A85' color='white' width='300px' handleClick={
+            <li className="search w-100 d-flex flex-row justify-content-center">
+              <div className="box">
+                <div className="container-1 text-center col-12">
+                  <span className="icon"> <i className="fa fa-search" /></span>
+                  <input type="search" id="search" placeholder="Search..." />
+                </div>
+              </div>
+
+              {/* <DeafultButton text='serch' bg='#491A85' color='white' width='100px' handleClick={
                 () => {}
-              } />
+              } /> */}
             </li>
-       
-              
+
+
 
           </div>
         </div>
@@ -88,31 +98,11 @@ const Courses = () => {
 
 
       <div className="container">
-
-
-
-
-
-
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
-              
-            {myCourses.map((course , index)=> <Card key={index} courseId={course.id} title={course.name} pra={course.category.name}  Image={course.image} /> )}
-      
-    
-     
-
-
-
-
-
-
-
-
-        </div>
-
-
-
-      </div>
+          {myCourses.map((course, index) => <Card key={index} courseId={course.id} title={course.name} pra={course.category.name} Image={course.image} />
+          
+          )}
+        </div>    </div>
     </div>
 
 

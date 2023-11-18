@@ -44,7 +44,7 @@ const Footer = () => {
   {/* Section: Social media */}
   {/* Section: Links  */}
   <section >
-    <div className="container text-center text-md-start mt-5">
+    <div className="footerDetails container text-center text-md-start mt-5">
       {/* Grid row */}
       <div className="row mt-3">
         {/* Grid column */}
@@ -53,18 +53,18 @@ const Footer = () => {
           <h6 className="Text  text-uppercase fw-bold mb-4">
             <i className="fas fa-gem me-3" />HOBBIES
           </h6>
-          <p className="Text">
+          <h6 className="Text ">
           Gravida sed justo, justo, id est et. Amet tristique convallis sed porttitor nullam eu ut. Duis et odio aliquam bibendum. Metus et lectus id viverra fringilla magna morbi. 
-          </p> 
+          </h6> 
           <form className="search">
         <input className="form-control me-sm-2 px-5 rounded-5 " type="text" placeholder="Enter email" />
       </form>  
-      <DeafultButton bg="#491a85" text="Subscribe" width="50%" handleClick={(e)=>{e.preventDefault();
+      <DeafultButton bg="#491a85" color='white' text="Subscribe" width="50%" handleClick={(e)=>{e.preventDefault();
       console.log("manar")}} />
         </div>
         {/* Grid column */}
         {/* Grid column */}
-        <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+        <div className=" col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
           {/* Links */}
           <h6 className="text-uppercase fw-bold mb-4">
             Products

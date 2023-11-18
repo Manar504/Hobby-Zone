@@ -1,21 +1,21 @@
-import axios, { Axios } from 'axios';
+
 import { BASE_URL } from '../constants';
 export const registerUser = async (userData: { username: string; phone: string; email: string; password: string }) => {
-    // const response = await fetch(`${BASE_URL}/register`, {
-    //   method: 'POST',
-    //   headers: {
-    //     'Accept': 'application/json',
+    const response = await fetch(`${BASE_URL}/register`, {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
       
-    //   },
-    //   body: JSON.stringify(userData),
-    // });
+      },
+      body: JSON.stringify(userData),
+    });
     
-    // if (!response.ok) {
-    //   throw new Error('Registration failed');
-    // }
-    // console.log(response.json);
+    if (!response.ok) {
+      throw new Error('Registration failed');
+    }
+    console.log(response.json);
     
-    // return response.json();
+    return response.json();
     // let response  =  await axios({
     //   method:"post" ,
     //   url : `${BASE_URL}/register`,
@@ -29,14 +29,10 @@ export const registerUser = async (userData: { username: string; phone: string; 
     //     "email": " KKK@gmail.com"
     //   },
     // });
-    // console.log(await response.data);
-    // return {
-    //   props: {clientData : response.data}
-    // }
-    
+ 
 
-    let res = await axios.get("https://jsonplaceholder.typicode.com/posts");
-    console.log(res.data);
+    // let res = await axios.get("https://jsonplaceholder.typicode.com/posts");
+    // console.log(res.data);
     
     // console.log((await response).data);
   };

@@ -1,4 +1,4 @@
-"use client";
+
 import Link from "next/link";
 import React from "react";
 import Register from "../Register/page";
@@ -12,7 +12,11 @@ import apple from "../../public/Assets/login/apple.svg";
 import Image from "next/image";
 
 
-const Login = () => {
+ 
+
+
+const Login = async () => {
+
   
   return (
     <div className="container ">
@@ -27,8 +31,8 @@ const Login = () => {
             </Link>{" "}
           </p>
           <form action="">
-            <DeafultInput label="Email" type="Email" />
-            <DeafultInput label="Password" type="password" />
+            <DeafultInput  label="Email" type="Email" name={""} id={""} />
+            <DeafultInput label="Password" type="password" name={""} id={""} />
             <div className="wraper-footer-form d-flex justify-content-between align-items-center">
               <div className="rememper-wraper d-flex">
                 <input type="checkbox" />
@@ -42,10 +46,7 @@ const Login = () => {
             <DeafultButton
               text="LOGIN"
               width="100%"
-              handleClick={(e) => {
-                e.preventDefault();
-                console.log(e.target);
-              }}
+             
             />
           </form>
           <div className="divider-social d-flex align-items-center">
@@ -73,10 +74,6 @@ const Login = () => {
           <Image src={logo} width={150} alt="a" />
         </div>
       </div>
-      <button >INCREMENT</button>
-      <h2>0</h2>
-      <button>DECREMENT</button>
-
     </div>
   );
 };

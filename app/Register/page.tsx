@@ -12,7 +12,46 @@ import Image from 'next/image';
 import router, { useRouter } from 'next/router';
 import { registerUser } from '../utils/api';
 import axios, { Axios } from 'axios';
+const apiUrl = 'https://hobby-zone.kirellos.com/api/V1/register';
+const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
 
+ const handleRegister = async (e: React.FormEvent) => {
+    e.preventDefault();
+    // registerUser(formData);
+    // let response = await axios.post("https://hobby-zone.kirellos.com/api/V1/register",{
+    //   "phone": "0121321546" ,
+    //     "pssword": "88888888888888",
+    //     "username":"ZZZ",
+    //     "email": " KKK@gmail.com"
+    // } , );
+
+    // console.log(response.data);
+    
+    let response  =  await axios({
+      method:"post" ,
+      url : `${apiUrl}`,
+      headers : {
+        "Accept": "application/json",
+        "Access-Control-Allow-Origin":"*",
+      },
+      data : {
+        "phone": "01213215461121" ,
+        "password": "88888888888888",
+        "username":"ZZZ",
+        "email": " KKK@gmail.com"
+      },
+    });
+
+    // try {
+    //   // Call the registerUser function with form data
+    //   await registerUser(formData);
+    //   // Redirect or perform other actions after successful registration
+    //   router.push('/login');
+    // } catch (error) {
+    //   console.error('Registration failed', error);
+    //   // Handle registration error
+    // }
+  };
 
 const Register = () => {
 
@@ -30,30 +69,7 @@ const Register = () => {
     console.log(formData);
   };
 
-  const handleRegister = async (e: React.FormEvent) => {
-    e.preventDefault();
-    // registerUser(formData);
-    let response = await axios.post("https://bensize.kirellos.com/api/V1/register",{
-      "phone": "0121321546" ,
-        "pssword": "88888888888888",
-        "username":"ZZZ",
-        "email": " KKK@gmail.com"
-    } ,);
-
-    console.log(await response.data);
-    
-
-    // try {
-    //   // Call the registerUser function with form data
-    //   await registerUser(formData);
-    //   // Redirect or perform other actions after successful registration
-    //   router.push('/login');
-    // } catch (error) {
-    //   console.error('Registration failed', error);
-    //   // Handle registration error
-    // }
-  };
-
+ 
   
 
   return (
@@ -83,14 +99,7 @@ const Register = () => {
               <div className='rememper-wraper d-flex'>
               </div>
             </div>
-            <DeafultButton text='Register'
-              width='100%'
-
-              handleClick={(e) => {
-                e.preventDefault();
-                console.log(e.target);
-                handleRegister(e);
-              }} />
+            <button onClick={handleRegister}>TEST</button>
           </form>
           <div className='divider-social d-flex align-items-center'>
             <div className='underline'></div>

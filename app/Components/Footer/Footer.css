@@ -4,12 +4,17 @@ footer{
     
 }
 
-/* .Text{
-    color:#491A85!important;
-} 
 
 .form-control{
     width:70%!important;
     color: #491A85!important;
     
-} */
+} 
+
+.footerDetails p{
+    color: white !important;
+}
+
+.Text{
+    color:#491A85!important;
+} 
