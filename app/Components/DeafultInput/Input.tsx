@@ -2,10 +2,10 @@ import "./Input.css"
 import React from 'react'
 
 type defaultProps = {
-    type : string ;
-    label : string ;
-    name : string ;
-    id : string ; 
+    type? : string ;
+    label? : string ;
+    name? : string ;
+    id? : string ; 
     onChange?: (event: React.ChangeEvent<HTMLInputElement>) => void;
 
 }
