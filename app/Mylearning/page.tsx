@@ -36,14 +36,14 @@ const MyLearning = () => {
         
        
 <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
-<Card  title='Drawing' pra='intermediat' Image={course_imagex} width="25%" />  
+{/* <Card  title='Drawing' pra='intermediat' Image={course_imagex} width="25%" />  
         <Card title='Drawing' pra='intermediat' Image={pexels_gabby} width="60%"/>
         <Card title='Drawing' pra='intermediat' Image={pexels_anna} width="15%"/>
         <Card title='Drawing' pra='intermediat' Image={pexels_thirdman} width="80%"/>
         <Card title='Drawing' pra='intermediat' Image={pexels_javier} width="100%"/>
         <Card title='Drawing' pra='intermediat' Image={post_sample} width="70%"/>
 
-
+ */}
 
       
         
