@@ -21,11 +21,11 @@ const ChangePassword = () => {
           </p>
           <form>
             <div className="form-group mt-5 ">
-              <DeafultInput label="Current password" type="password" />
+              <DeafultInput label="Current password" type="password" name="" id=""/>
 
-              <DeafultInput label="New password" type="password" />
+              <DeafultInput label="New password" type="password" name="" id=""/>
 
-              <DeafultInput label="Confirm New password" type="password" />
+              <DeafultInput label="Confirm New password" type="password" name="" id=""/>
 
               <button
                 className="btn my-2 col-8 p-2 text-light rounded-3 "
