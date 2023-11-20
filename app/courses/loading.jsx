@@ -1,8 +1,8 @@
 import React from 'react'
-
+import "./courses.css"
 const loading = () => {
   return (
-    <div>.....</div>
+    <div className='loading'>.....</div>
   )
 }
 

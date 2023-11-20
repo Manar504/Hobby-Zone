@@ -5,6 +5,10 @@ align-items: center;
 height: 100vh;
 
 }  
+.hero-image{
+  width: 90%;
+}
+
 .Hero .row{
    margin-bottom: 40px; 
 }
@@ -27,7 +31,7 @@ height: 100vh;
     }
 
     .hero-image{
-        width: 300px;
+        width: 100%;
     }
 
   }
@@ -67,3 +71,9 @@ height: 100vh;
     color: white;
   }
   
+  .hero-text{
+    font-weight: 200;
+    text-align: justify;
+    text-justify: inter-word;
+    
+  }

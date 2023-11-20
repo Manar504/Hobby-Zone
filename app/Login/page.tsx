@@ -10,6 +10,7 @@ import google from "../../public/Assets/login/google.svg";
 import facebook from "../../public/Assets/login/Facebook.svg";
 import apple from "../../public/Assets/login/apple.svg";
 import Image from "next/image";
+import SecondaryButton from "../Components/SecondaryButton/secondaryButton";
 
 
  
@@ -43,11 +44,7 @@ const Login = async () => {
                 <Link href={"/ForgetPassword"}> forget your Password ? </Link>
               </p>
             </div>
-            <DeafultButton
-              text="LOGIN"
-              width="100%"
-             
-            />
+            <SecondaryButton text="Login" />
           </form>
           <div className="divider-social d-flex align-items-center">
             <div className="underline"></div>

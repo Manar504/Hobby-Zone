@@ -36,7 +36,7 @@ const Courses = () => {
     <div className='container-fluid'>
       <div className='row hero-row'>
 
-        <div className='hero '>
+        <div className='hero'>
           <Image alt='congrats' className='success-section' src={group} width={400} />          <div className='details'>
             <h3 className='content'> <span className='span' style={{ color: `orangered`, fontWeight: "bolder" }}>  Studying </span>Learning and
               teaching online,
@@ -51,7 +51,7 @@ const Courses = () => {
 
 
           </div>
-          <div className='hero-image'>
+          <div className='hero-image-courses'>
             <Image src={teenager} alt='teenager' width={450} className='' />
           </div>
 

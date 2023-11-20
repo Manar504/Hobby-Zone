@@ -1,0 +1,114 @@
+.image-wrapper{
+    display: flex;
+    background-color: aliceblue;
+    align-items: center;
+}
+
+.first-mockUp{
+    width: 650px;
+    height: 650px;
+}
+
+
+.image-wrapper .Header{
+    font-weight: bolder;
+    
+    font-size: 3.5em;
+    text-align: center;
+    background: -webkit-linear-gradient(315deg, #8ec5fc 0%, #e0c3fc 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.google-play-icon , .app-store-icon{
+    margin: 20px;
+    cursor: pointer;
+}
+.image-wrapper .details{
+    color: black;
+    text-align: center;
+    font-weight: 700;
+}
+
+
+@media screen and (max-width: 767px) {
+    .image-wrapper{
+        display: flex;
+        flex-direction: column;
+        background-color: aliceblue;
+        align-items: center;
+        justify-content: center;
+        
+    }
+    
+    .first-mockUp{
+        width: 650px;
+        height: 650px;
+        margin-right: 80px;
+        order: 1;
+    }
+    .details-wraper{
+        order: 2;
+    }
+    
+    .image-wrapper .Header{
+        font-weight: bolder;
+        
+        font-size: 3.5em;
+        text-align: center;
+        background: -webkit-linear-gradient(315deg, #8ec5fc 0%, #e0c3fc 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+    .google-play-icon , .app-store-icon{
+        text-align: center;
+        cursor: pointer;
+        width: 100%;
+    }
+  }
+
+
+  @media screen and (max-width: 767px) {
+    .second-preview ,.firstPreview{
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+
+        
+    }
+    
+    .first-mockUp-two{
+        width: 650px;
+        height: 650px;
+        order: 1;
+        margin-right: 80px;
+
+    }
+
+
+    .features{
+        order: 2;
+    }
+}
+
+.image-wrapper-two{
+    
+    align-items: start;
+    justify-content: start;
+    
+}
+.first-mockUp-two{
+    
+    width: 650px;
+    height: 650px;
+}
+
+
+.second-preview ,.firstPreview{
+    align-items: center;
+    justify-content: space-around;
+    display: flex;
+    
+}
+

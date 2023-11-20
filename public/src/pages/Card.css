@@ -1,0 +1,72 @@
+.book-new-one-2 {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  max-width: 100%;
+  overflow: hidden;
+  max-height: 100%;
+  object-fit: cover;
+}
+.book-new-one-2-wrapper {
+  position: absolute;
+  top: 0;
+  left: 1rem;
+  border-radius: 40px;
+  width: 8.25rem;
+  height: 8.25rem;
+  overflow: hidden;
+}
+.what-is-oclock {
+  position: relative;
+  line-height: 140%;
+}
+.what-is-oclock-now-wrapper {
+  position: absolute;
+  top: calc(50% + 41px);
+  left: 0;
+  width: 15rem;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.5rem var(--padding-base) var(--padding-base);
+  box-sizing: border-box;
+}
+.iconheart {
+  position: relative;
+  width: 1.5rem;
+  height: 1.5rem;
+}
+.btn-round,
+.card {
+  border-radius: var(--br-5xl);
+}
+.btn-round {
+  position: absolute;
+  top: calc(50% - 74px);
+  right: 1rem;
+  background-color: rgba(255, 255, 255, 0.3);
+  backdrop-filter: var(--glass);
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding: 0.63rem;
+}
+.card {
+  position: relative;
+  width: 100%;
+  height: 11.25rem;
+  background-image: url(/public/card@3x.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  text-align: left;
+  font-size: 1.13rem;
+  color: #fff;
+  font-family: var(--font-poppins);
+}

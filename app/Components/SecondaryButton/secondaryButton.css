@@ -1,0 +1,30 @@
+
+.follow-btn{
+    transition: 1s ease-in;
+    text-align: center;
+    color: var(--main-color);
+    width: 10em;
+    height: 50px;
+border-radius: 10px;
+border: solid 0.9px slatelue;
+background:  #ECE9EF;
+flex-shrink: 0;
+padding: 10px;
+margin:  10px 20px;
+}
+
+.follow-btn:hover{
+    
+  transition: 1s;
+  cursor: pointer;
+  text-align: center;
+  color: var(--main-color);
+  width: 11em;
+  height: 50px;
+border-radius: 10px;
+background: white;
+border: 1px var(--main-color) solid;
+flex-shrink: 0;
+padding: 10px;
+
+}

@@ -1,4 +1,5 @@
 
+"use client"
 import Image from "next/image";
 import styles from "./page.module.css";
 import Navbar from "./Components/Navbar/Navbar";
@@ -13,6 +14,7 @@ import { fetchCourses } from "./GlobalRedux/allcoursesSlice";
 
 export default function Main() {
 
+  
   return (
     <main>
       

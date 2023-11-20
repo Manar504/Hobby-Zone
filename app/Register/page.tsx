@@ -12,6 +12,7 @@ import Image from 'next/image';
 import router, { useRouter } from 'next/router';
 import { registerUser } from '../utils/api';
 import axios, { Axios } from 'axios';
+import SecondaryButton from '../Components/SecondaryButton/secondaryButton';
 const apiUrl = 'https://hobby-zone.kirellos.com/api/V1/register';
 const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
 
@@ -38,7 +39,7 @@ const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
         "phone": "01213215461121" ,
         "password": "88888888888888",
         "username":"ZZZ",
-        "email": " KKK@gmail.com"
+        "email": " KKK@gmail.com" 
       },
     });
 
@@ -99,7 +100,9 @@ const Register = () => {
               <div className='rememper-wraper d-flex'>
               </div>
             </div>
-            <button onClick={handleRegister}>TEST</button>
+            <SecondaryButton text='Register'  />
+            <button onClick={handleRegister}>Test</button>
+
           </form>
           <div className='divider-social d-flex align-items-center'>
             <div className='underline'></div>

@@ -28,7 +28,7 @@
         align-items: center;
     }
 
-    .hero-image{
+    .hero-image-courses{
       position: relative;
       bottom: -10%;
       left: -10%;
@@ -101,7 +101,7 @@
   }
 
 
-.hero-image{
+.hero-image-courses{
     position: relative;
     bottom: -10%;
     right: 0%;
@@ -122,9 +122,6 @@
 
 
 
-p{
-    color:#491A85;
-} 
 
 
 
