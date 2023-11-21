@@ -1,4 +1,4 @@
-"use client";
+// "use client";
 import React from "react";
 import "./Navbar.css";
 import Link from "next/link";
@@ -12,15 +12,33 @@ import { useRouter } from "next/router";
 import NavItem from "./NavItem";
 import { navLinks } from "@/app/constants/Navlinks";
 import Logo from "../Logo/Logo";
+import { getServerSession } from "next-auth";
+import SecondaryButton from "../SecondaryButton/secondaryButton";
+import { signOut } from "next-auth/react";
+import Logout from "../Logout/logout";
+// import SigninButton from "../GoogleSignInButton/SigninButton";
+// import ProvidersWrapper from "@/app/ProviderWrappers";
 
+const session =  getServerSession();
 
-const Navbar = () => {
+type NavProps = {
+  isAuthnticated? : boolean
+}
 
+const Navbar = async (props:NavProps) => {
+
+  let listLinks = [...navLinks] ;
+  
   // const router = useRouter(); 
+  
+  if(props.isAuthnticated == false ){
+     listLinks = navLinks.filter(link=> link !== "courses" && link !=="profile" )
+  }
+
 
   return (
     <div>
-      <nav className="navbar navbar-expand-sm navbar-dark">
+      <nav className="navbar navbar-expand-sm navbar-dark ">
         <div className="container hoby-nav">
           <Link className="navbar-brand" href="/">
            <Logo/>
@@ -54,19 +72,18 @@ const Navbar = () => {
               </li>
             </ul>
 
-            <ul className="navbar-nav ms-auto mt-2 mt-lg-0">
-             {navLinks.map((item,index)=> <NavItem key={index} text={item} url={`/${item =="Home" ? "" : item}`} /> )}
-            
-            </ul>
-            <div className="nav-item">
+            <ul className="navbar-nav mx-auto mt-2 mt-lg-0">
+             {listLinks.map((item,index)=> <NavItem key={index} text={item} url={`/${item =="Home" ? "" : item}`} /> )}
               
-
-               <DeafultButton
-                
-                text="Sign in"
-                navigate="/Login"
-                width="100px"
-              /> 
+            </ul>
+            <div className="nav-item ms-auto  ">
+            <div> 
+        {props.isAuthnticated == false ?  <DeafultButton text="Login" navigate="\Login"/> :<Logout/>}
+        {/* {props.isAuthnticated == true ?  } */}
+        </div>
+           
+               
+                 {/* <SigninButton/> */}
             </div>
           </div>
         </div>

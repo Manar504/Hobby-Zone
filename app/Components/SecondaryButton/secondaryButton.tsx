@@ -13,7 +13,7 @@ type ButtonProps = {
   
 const SecondaryButton = (props:ButtonProps) => {
   return (
-    <div className="follow-btn" > {props.text} </div>
+    <button className="follow-btn" onClick={props.handleClick} type={props.type}> {props.text}  </button>
   )
 }
 

@@ -26,13 +26,11 @@ const DeafultButton = (props: ButtonProps) => {
         backgroundColor: props.bg || defaultBgColor,
         color: props.color || "black",
       }}
-
+      
        onClick={()=> props.navigate !== null ?  router.push(props.navigate!) : props.handleClick }
-      
-      
     >
-      {" "}
-      {props.text}{" "}
+   
+      {props.text}
     </button>
   );
 };

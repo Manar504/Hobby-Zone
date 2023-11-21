@@ -7,4 +7,16 @@ const nextConfig = {
       },
 }
 
-module.exports = nextConfig
+
+module.exports = {
+  async rewrites() {
+    return [
+      {
+        source: '/login',
+        destination: 'https://hobby-zone.kirellos.com',
+      },
+    ]
+  },
+}
+
+// module.exports = nextConfig

@@ -20,11 +20,13 @@ import { DefaultContext } from 'react-icons';
 import DeafultButton from '../Components/DeafultButton/DeafultButton';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCourses } from '../GlobalRedux/allcoursesSlice';
+import KeenSlider from "../Components/EmplaCarousal/EmplaCarousal"
 
 
 
 
 const Courses = () => {
+  
   const dispatch = useDispatch();
   const courses = useSelector(state => state.courses);
   let myCourses = courses.data || [];
@@ -34,6 +36,7 @@ const Courses = () => {
   }, [])
   return (
     <div className='container-fluid'>
+      
       <div className='row hero-row'>
 
         <div className='hero'>
@@ -64,7 +67,8 @@ const Courses = () => {
 
 
       </div>
-
+      <h2 className='text-center my-3 fw-bolder '>Categories</h2>
+      <KeenSlider  />
       <section className="py-3 text-center container">
         <div className="row py-lg-5">
           <div className="col-lg-6 col-md-8 mx-auto">
@@ -92,6 +96,7 @@ const Courses = () => {
       </section>
 
 
+              
 
 
 

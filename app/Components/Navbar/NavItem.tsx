@@ -9,7 +9,7 @@ interface NavItemProps {
 const NavItem: React.FC<NavItemProps> = ({ text, url }) => {
   return (
     <li className="nav-item">
-      <Link className="nav-link  text-capitalize" href={url ?? '/'}>
+      <Link className="nav-link  text-light mx-2 text-capitalize" href={url ?? '/'}>
         {text}
       </Link>
     </li>
