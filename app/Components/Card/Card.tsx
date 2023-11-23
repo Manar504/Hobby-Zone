@@ -7,6 +7,7 @@ type CardProps = {
   title: string;
   pra: string;
   progresswidth?: string; 
+  handleClick?: (event: React.MouseEvent<HTMLButtonElement>) => void;
 };
 
 const Card = (props: CardProps) => {
@@ -31,7 +32,7 @@ const Card = (props: CardProps) => {
             aria-valuemax={100}
           /> 
         </div>   }
-        <button className="custom-btn btn-8 m-0 "><span>Join Now</span></button>
+        <button className="custom-btn btn-8 m-0 " onClick={props.handleClick}> <span>Join Now</span> </button>
         {/* <DeafultButton
         bg='#491A85'
           color='white'

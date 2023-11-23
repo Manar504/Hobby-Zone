@@ -1,8 +1,8 @@
 import React from 'react'
-import "./courses.css"
+import LoadingSpinner from "../Components/Loading/Loading";
 const loading = () => {
   return (
-    <div className='loading'>.....</div>
+   <LoadingSpinner />
   )
 }
 

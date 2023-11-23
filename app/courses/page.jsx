@@ -1,6 +1,6 @@
 "use client"
 
-import React, { useEffect } from 'react';
+import React, { useEffect, useState } from 'react';
 import Card from '../Components/Card/Card';
 import Image from 'next/image';
 import Rectangle_180 from "../../public/Assets/course image/Rectangle 180.png";
@@ -21,19 +21,24 @@ import DeafultButton from '../Components/DeafultButton/DeafultButton';
 import { useDispatch, useSelector } from 'react-redux';
 import { fetchCourses } from '../GlobalRedux/allcoursesSlice';
 import KeenSlider from "../Components/EmplaCarousal/EmplaCarousal"
-
+import Link from 'next/link'
+import { useRouter } from 'next/navigation';
 
 
 
 const Courses = () => {
-  
+  const router = useRouter();
   const dispatch = useDispatch();
+  const [searchQuery, setSearchQuery] = useState('');
   const courses = useSelector(state => state.courses);
   let myCourses = courses.data || [];
   useEffect(() => {
     dispatch(fetchCourses());
 
-  }, [])
+  }, []);
+  const filteredCourses = myCourses.filter(course =>
+    course.name.toLowerCase().includes(searchQuery.toLowerCase()) ||  course.category.name.toLowerCase().includes(searchQuery.toLowerCase())
+  );
   return (
     <div className='container-fluid'>
       
@@ -47,12 +52,7 @@ const Courses = () => {
             <p className='text-light '>Hobbies is an interesting platform that will teach you in more an interactive way</p>
             <div className='player-section d-flex'>
             <button className="custom-btn btn-8 m-0 "><span>Exploere Now</span></button>
-
-
-
             </div>
-
-
           </div>
           <div className='hero-image-courses'>
             <Image src={teenager} alt='teenager' width={450} className='' />
@@ -80,7 +80,11 @@ const Courses = () => {
               <div className="box">
                 <div className="container-1 text-center col-12">
                   <span className="icon"> <i className="fa fa-search" /></span>
-                  <input type="search" id="search" placeholder="Search..." />
+                  <input type="search"
+              id="search"
+              placeholder="Search..."
+              value={searchQuery}
+              onChange={(e) => setSearchQuery(e.target.value)} />
                 </div>
               </div>
 
@@ -104,10 +108,14 @@ const Courses = () => {
 
       <div className="container">
         <div className="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mb-5">
-          {myCourses.map((course, index) => <Card key={index} courseId={course.id} title={course.name} pra={course.category.name} Image={course.image} />
-          
-          )}
-        </div>    </div>
+        {filteredCourses.map((course, index) => ( <> 
+            <Card key={index} handleClick={ ()=> router.push(`/courses/${course.id}`)}  courseId={course.id} title={course.name} pra={course.category.name}  Image={course.image} />
+            
+            </>
+          ))}
+        </div>
+            
+            </div>
     </div>
 
 

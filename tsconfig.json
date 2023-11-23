@@ -38,7 +38,7 @@
     "app/courses/page.jsx",
     "app/page.tsx",
     "app/Components/Card/Card.tsx"
-, "app/courses/loading.jsx", "app/Home/DownloadApp/page.tsx", "app/api/auth/[...nextauth]/route.ts"  ],
+, "app/courses/loading.jsx", "app/Home/DownloadApp/page.tsx", "app/api/auth/[...nextauth]/route.ts", "app/courses/[id]/page.jsx", "app/courses/[id]/page.jsx"  ],
   "exclude": [
     "node_modules"
   ]

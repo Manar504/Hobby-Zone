@@ -2,6 +2,7 @@
 import Link from 'next/link'
 import React, { FormEvent, useState } from 'react'
 import "./Register.css"
+import Joi from "joi";
 import DeafultInput from '../Components/DeafultInput/Input'
 import DeafultButton from '../Components/DeafultButton/DeafultButton'
 import logo from "../../public/Assets/origami/origami3.png"
@@ -11,9 +12,11 @@ import apple from "../../public/Assets/login/apple.svg"
 import Image from 'next/image';
 import router, { useRouter } from 'next/navigation';
 import { registerUser } from '../utils/apiz';
+import 'react-toastify/dist/ReactToastify.css';
+
 import axios, { Axios } from 'axios';
 import SecondaryButton from '../Components/SecondaryButton/secondaryButton';
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 const apiUrl = 'https://hobby-zone.kirellos.com/api/V1/';
 const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
 
@@ -61,10 +64,24 @@ const proxyUrl = 'https://cors-anywhere.herokuapp.com/';
 
 const Form = () => {
 
-    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {  const notify = () => toast.error("email or password not valid",);
-    const router = useRouter();
-        e.preventDefault();
+  const [erorrs, setErorrs] = useState([])
+  
+
+
+
+
+
+
+  const router = useRouter();
+    const handleSubmit = async (e: FormEvent<HTMLFormElement>) => {   e.preventDefault();  const notify = () => toast.error("Please fill in all required fields",);
+  
         const formData = new FormData(e.currentTarget);
+        if (!formData.get('username') || !formData.get('email') || !formData.get('password')) {
+          // Display an error message or handle validation in your preferred way
+          notify();
+          console.error('Please fill in all required fields');
+          return;
+        }
         const response = await fetch(`/api/auth/register`, {
           method: 'POST',
           body: JSON.stringify({
@@ -78,6 +95,7 @@ const Form = () => {
       router.refresh();
     } else {
       notify();
+      
     }
       };
 
@@ -97,7 +115,16 @@ const Form = () => {
     console.log(formData);
   };
 
- 
+  const validateRegisterForm = () => {
+    const schema = Joi.object({
+      username: Joi.string().alphanum().min(3).max(15),
+      lastname: Joi.string().alphanum().min(3).max(15),
+      email: Joi.string().email({ minDomainSegments: 2, tlds: { allow: ['com', 'net'] } }),
+      password: Joi.string().pattern(new RegExp('^[a-zA-Z0-9]{3,30}$')),
+      Confirmpassword: Joi.ref('password'),
+    });
+    return schema.validate(formData, { abortEarly: false });
+  };
   
 
   return (
@@ -105,6 +132,7 @@ const Form = () => {
       <div className='row'>
         <div className='col-md-5 col-sm-12 p-5'>
           <h3>Sign Up</h3>
+          {/* {erorrs.map((err,i)=> <div key={i} className="alert bg-danger col-12 col-lg-9 col-xl-7 rounded-2 text-white "> {err.message} </div>)  }  */}
           <p className=' mb-5 '>Alerady have an account? <Link className='Login-button' href={"/Login"}> Sign In </Link> </p>
           <form  onSubmit={handleSubmit}>
             <div className='row'>
@@ -118,16 +146,17 @@ const Form = () => {
             </div>
 
             <DeafultInput label='Email' type='Email' id='email' name='email'  onChange={handleInputChange}/>
-            <DeafultInput label='Confirm Password' type='password'  id='password' name='password' onChange={handleInputChange}/>
-
             <DeafultInput label='Password' type='password' name='password' id='password' onChange={handleInputChange}/>
+            <DeafultInput label='Confirm Password' type='password'  id='Confirmpassword' name='Confirmpassword' onChange={handleInputChange}/>
+
+           
 
 
             <div className='wraper-footer-form d-flex justify-content-between align-items-center'>
               <div className='rememper-wraper d-flex'>
               </div>
             </div>
-            <DeafultButton text='Register'  type="submit"  bg='#491A85' color='white' width='100'/>
+            <DeafultButton  text='Register' navigate=''  type="submit"  bg='#491A85' color='white' width='100'/>
             
 
           </form>
@@ -148,6 +177,18 @@ const Form = () => {
           <Image src={logo} width={150} alt='a' />
         </div>
       </div>
+      <ToastContainer position="bottom-center"
+
+      // transition={ true }
+        autoClose={2500}
+        hideProgressBar={false}
+        newestOnTop={false}
+        closeOnClick
+        rtl={false}
+        pauseOnFocusLoss
+        draggable
+        pauseOnHover
+        theme="dark" />
     </div>
   )
 }
